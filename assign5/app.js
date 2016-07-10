@@ -7,19 +7,14 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(500, 500)
+  createCanvas(800, 500)
   background (202, 190, 190)
   beats.loop();
 }
 
 function draw () {
-  rect(150, 150, 150, 150);
   fill(14, 189, 189);
-  mouseClicked(function(){
-    if (sound1.isPlaying() ) {
-      sound1.stop();
-    } else {
-      sound1.play()
-    }
-  });
+  rect(50, 100, 200, 200);
+  fill(174, 73, 185);
+  rect(400, 100, 200, 200);
 }
