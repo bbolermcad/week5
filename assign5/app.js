@@ -13,8 +13,8 @@ function setup() {
 }
 
 function draw () {
-  rectangle(150, 150, 150, 150);
-  background(14, 189, 189);
+  rect(150, 150, 150, 150);
+  fill(14, 189, 189);
   mouseClicked(function(){
     if (sound1.isPlaying() ) {
       sound1.stop();
