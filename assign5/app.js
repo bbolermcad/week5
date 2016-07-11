@@ -18,3 +18,7 @@ function draw () {
   fill(174, 73, 185);
   rect(400, 100, 200, 200);
 }
+
+function mousePressed(){
+  var d = dist(mouseX, mouseY, 50, 100, 400, 100)
+}
