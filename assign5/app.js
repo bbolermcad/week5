@@ -7,8 +7,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(600, 400)
-  background (202, 190, 190)
+  createCanvas(600, 400);
+  background (202, 190, 190);
   beats.loop();
 }
 
@@ -20,8 +20,12 @@ function draw () {
 }
 
 function mousePressed(){
-  var d = dist(mouseX, mouseY, 150, 150, 400, 150);
-  if (d > 100) {
+  var d1 = dist(mouseX, mouseY, 150, 150);
+  var d2 = dist(mouseX, mouseY, 400, 150);
+  if (d1 < 100) {
     sound1.play()
+  }
+  if (d2 < 100) {
+    sound2.play()
   }
 }
