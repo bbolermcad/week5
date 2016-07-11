@@ -20,5 +20,8 @@ function draw () {
 }
 
 function mousePressed(){
-  var d = dist(mouseX, mouseY, 50, 100, 400, 100)
+  var d = dist(mouseX, mouseY, 50, 100, 400, 100);
+  if (d > 100) {
+    sound1.play()
+  }
 }
